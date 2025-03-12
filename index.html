@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="city-name">City Name</h2>
+            <h3 id="temperature">--°C</h3>
+            <p id="description">Weather Condition</p>
+            <p>Humidity: <span id="humidity">--</span>%</p>
+            <p>Wind Speed: <span id="wind-speed">--</span> km/h</p>
+        </div>
+        <div class="forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container"></div>
+        </div>
+    </div>
+</body>
+</html>
